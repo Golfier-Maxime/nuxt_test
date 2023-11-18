@@ -41,10 +41,15 @@ const heroRecipes = computed(() => {
               id: recipe.recipe_id,
               title: recipe.recipe_name,
               description: recipe.recipe_description,
+              imageSrc: recipe.image_url,
             }"
           ></MyCard2>
         </div>
       </div>
+    </div>
+    <div class="p-index__titre">
+      <p class="p-index__titre-product">Product</p>
+      <h2 class="p-index__titre-item">Most Popular Items</h2>
     </div>
     <div class="flex">
       <div class="p-index__AllRecipes">
@@ -55,6 +60,7 @@ const heroRecipes = computed(() => {
               id: recipe.recipe_id,
               title: recipe.recipe_name,
               description: recipe.recipe_description,
+              imageSrc: recipe.image_url,
             }"
           ></MyCard>
         </div>
@@ -88,6 +94,19 @@ const heroRecipes = computed(() => {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 50px;
+  }
+  &__titre {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__titre-product {
+    color: $primary-color;
+    font-size: 18px;
+  }
+  &__titre-item {
+    font-weight: bold;
+    font-size: 36px;
   }
 }
 .flex {

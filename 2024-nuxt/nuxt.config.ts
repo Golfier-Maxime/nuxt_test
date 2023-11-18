@@ -22,7 +22,13 @@ components : [
     pathPrefix: false
   }
 ],
-modules: ['@nuxtjs/prismic'],
+modules: [
+  
+'@nuxtjs/prismic',
+'@pinia/nuxt',
+'@nuxtjs/storybook'
+],
+
 prismic: { endpoint: process.env.NUXT_PRISMIC_ENDPOINT },
 runtimeConfig: {
     public: {
