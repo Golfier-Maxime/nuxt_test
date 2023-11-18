@@ -126,7 +126,7 @@ const cardRecipes = computed(() => {
     justify-content: space-evenly;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 200px;
     margin-bottom: 50px;
   }
   &__contact-time {

@@ -41,7 +41,7 @@
   }
   &__footer {
     margin-top: 200px;
-    background: $primary-color;
+    background: #fafaff;
     grid-area: footer;
   }
   &__header {
