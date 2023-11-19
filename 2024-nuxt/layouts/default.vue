@@ -1,7 +1,7 @@
 <template>
   <main class="layout">
     <header class="layout__header">
-      <slot name="header"></slot>
+      <Header></Header>
     </header>
     <aside class="layout__aside">
       <slot name="aside"></slot>
@@ -41,11 +41,11 @@
   }
   &__footer {
     margin-top: 200px;
-    background: $primary-color;
+    background: #fafaff;
     grid-area: footer;
   }
   &__header {
-    background: $primary-color;
+    background: white;
     grid-area: header;
   }
 }

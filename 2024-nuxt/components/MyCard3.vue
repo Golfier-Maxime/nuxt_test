@@ -13,20 +13,17 @@ defineProps({
 
 <template>
   <div class="card">
-    <div class="card__image">
-      <img class="card__image--size" :src="imageSrc" :alt="imageAlt" />
+    <div class="card__logo">
+      <MyIcon name="fc" color="light-orange"></MyIcon>
     </div>
     <div class="card__c1">
-      <MyTitle size="weight" :content="title" class="card__c1--title"></MyTitle>
-      <p class="card__c1--desc">{{ desc }}</p>
-      <p class="card__c1--prix">
-        <!-- {{ prix }} -->
-        25.00
+      <MyTitle size="weight" :content="title" class="card__c1--title">
+        {{ content }}</MyTitle
+      >
+      <p class="card__c1--desc">
+        But I must explain to you how all this mistaken idea of denouncing
+        pleasur and prasising pain was bron.
       </p>
-    </div>
-    <div class="card__arrow">
-      <MyIcon name="rightarrow" color="black"></MyIcon>
-      <MyIcon name="leftarrow"></MyIcon>
     </div>
   </div>
 </template>
@@ -34,15 +31,14 @@ defineProps({
 <style lang="scss" scoped>
 .card {
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 278px;
-  max-height: 390px;
+
   margin-top: 50px;
 
-  .card__image--size {
-    width: 238px;
-    height: 206px;
-    margin-left: 20px;
+  &__logo {
+    display: flex;
+    justify-content: center;
   }
+
   .card__arrow {
     margin-top: -25px;
     margin-bottom: -100px;
@@ -53,9 +49,11 @@ defineProps({
   .card__c1 {
     display: flex;
     flex-direction: column;
-    padding-right: 20px;
-    margin-top: -100px;
-    padding-top: 100px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: -120px;
+    padding-top: 150px;
+    padding-bottom: 100px;
     border-radius: rem(20);
     box-shadow: -2px 0px 10px 1px rgb(200, 200, 200),
       2px 0px 10px 1px rgb(200, 200, 200);

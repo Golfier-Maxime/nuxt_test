@@ -41,7 +41,8 @@ defineProps({
       </div>
       <div class="card__prix">
         <p>
-          {{ prix }}
+          <!-- {{ prix }} -->
+          $25.00
         </p>
       </div>
     </div>
